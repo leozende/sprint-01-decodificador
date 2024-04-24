@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/styles/main.css" />
+
+    <title>Decodificador Sprint-01</title>
+  </head>
+  <body>
+
+    <header>
+      <img src="./src/assets/icons/alura-logo.svg" alt="Alura logo" />
+    </header>
+
+    <main>
+      <section class="encrypt">
+        <span id="encrypt-decrypt" role="textbox" contenteditable="true"></span>
+        <h2 class="encrypt__alert">
+          <img src="./src/assets/icons/exclamation.svg" alt="Alerta" />
+          Apenas lestras minúsculas e sem acento.
+        </h2>
+        <section class="encrypt__buttons">
+          <button onclick="encrypt()" class="encrypt__buttons__encrypt">Criptografar</button>
+          <button onclick="decrypt()" class="encrypt__buttons__decrypt">Descriptografar</button>
+        </section>
+      </section>
+      <section class="result">
+        <img src="./src/assets/images/no-message.png" alt="No Message" />
+        <h3>Nenhuma mensagem encontrada</h3>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./src/scripts/index.js" defer></script>
+  </body>
+</html>
